@@ -34,7 +34,7 @@ const tutorialData = [
     ),
   },
   {
-    gif: "https://media.giphy.com/media/26uf1ViEwWUNAVA4w/giphy.gif",
+    gif: "https://storage.googleapis.com/tempo-public-images/ai-prompt.gif",
     title: "Generate With AI",
     subtitle: "You can generate UIs using text prompts or images",
     customJSX: (
