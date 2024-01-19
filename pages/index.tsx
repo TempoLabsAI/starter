@@ -5,5 +5,11 @@ import Tutorial from "@/components/tutorial";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <Tutorial />;
+  return (
+    <div className="w-screen h-screen">
+      <div className="delete-div-after-tutorial">
+        <Tutorial />;
+      </div>
+    </div>
+  );
 }
