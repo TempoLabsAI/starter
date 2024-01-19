@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { ChevronLeft } from "lucide-react";
 import { ChevronRight } from "lucide-react";
+import { MousePointer2 } from "lucide-react";
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react";
@@ -10,7 +11,7 @@ const tutorialData = [
   {
     gif: "https://storage.googleapis.com/tempo-public-images/Preview%20Mode-new.gif",
     title: "Welcome to Tempo",
-    subtitle: "This tutorial will teach you how to visually edit react code",
+    subtitle: "This tutorial will teach you how to visually edit React code",
     customJSX: (
       <div className="flex items-center gap-x-9 my-5 justify-start h-20">
         <div className="flex flex-col gap-x-9">
@@ -23,12 +24,15 @@ const tutorialData = [
   {
     gif: "https://storage.googleapis.com/tempo-public-images/styling-panel.gif",
     title: "Edit Styles",
-    subtitle: "You can edit tailwind code just like a design tool",
+    subtitle: "You can edit Tailwind code just like a design tool",
     customJSX: (
       <div className="flex items-center gap-x-9 my-5 justify-start">
         <div>
-        <p className="text-md text-gray-300 text-2xl">Step 1: Select edit mode in top-right to edit styles</p>
-        <p className="text-md text-gray-300 text-2xl">Step 2: Change the color of this div ----------></p></div>
+        <div className="flex flex-row space-x-2 text-md text-gray-300 text-2xl">
+        <p>Step 1: Use the <span className="italic">Select</span> tool by clicking the </p> <div className="bg-[#6858f5] p-2"><MousePointer2 /></div> <div>icon.</div>
+        </div>
+        <p className="text-md text-gray-300 text-2xl">Step 2: Select edit mode in top-right to edit styles</p>
+        <p className="text-md text-gray-300 text-2xl">Step 3: Change the color of this div ----------></p></div>
         <div className="w-20 h-20 bg-orange-400"></div>
       </div>
     ),
@@ -61,7 +65,7 @@ const tutorialData = [
   },
   {
     gif: "https://storage.googleapis.com/tempo-public-images/components-marketplace.gif",
-    title: "Reuse Components From The Marketplace",
+    title: "Reuse Components from the Marketplace",
     subtitle: "Drag and drop any component from the community",
     customJSX: (
       <div className="flex items-center gap-x-9 my-5 justify-start h-20">
@@ -74,7 +78,7 @@ const tutorialData = [
   },
   {
     gif: "https://storage.googleapis.com/tempo-public-images/push-git.gif",
-    title: "Push To Github",
+    title: "Push to Github",
     subtitle: "Create a git repository and publish your code",
     customJSX: (
       <div className="flex items-center gap-x-9 my-5 justify-start h-20">
@@ -88,12 +92,28 @@ const tutorialData = [
   },
   {
     gif: "https://media.giphy.com/media/3oz9ZE2Oo9zRC/giphy.gif",
-    title: "That's it!",
+    title: "That's it! (...almost)",
     subtitle: "Time to start building your own UIs :)",
     customJSX: (
       <div className="flex items-center gap-x-9 my-5 justify-start h-20">
         <div className="flex flex-col gap-x-9">
           <p className="text-2xl text-gray-300">Questions? Reach us at founders@tempolabs.ai</p>
+        </div>
+      </div>
+    ),
+  },
+  {
+    gif: "https://storage.googleapis.com/tempo-public-images/delete-tutorial-2.gif",
+    title: "Burn everything (but not really)",
+    subtitle: "Work better with a blank slate?",
+    customJSX: (
+      <div className="flex items-center gap-x-9 my-5 justify-start h-20">
+        <div className="flex flex-col gap-x-9 flex flex-row space-x-2 text-md text-gray-300 text-2xl">
+          <div className="flex flex-row space-x-2 text-md text-gray-300 text-2xl">
+        <p>Step 1: Use the <span className="italic">Select</span> tool by clicking the </p> <div className="bg-[#6858f5] p-2"><MousePointer2 /></div> <div>icon.</div>
+        </div>
+        <p>Step 2: Click the div that contains the <code className="text-lg">Tutorial</code></p>
+        <p>Step 3: Right-click and delete the div that renders the Tutorial</p>
         </div>
       </div>
     ),
