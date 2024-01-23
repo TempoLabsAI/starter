@@ -9,7 +9,7 @@ import { useState } from "react";
 
 const tutorialData = [
   {
-    gif: "https://storage.googleapis.com/tempo-public-images/Preview%20Mode-new.gif",
+    gif: "https://storage.googleapis.com/tempo-public-assets/Preview%20Mode-new.gif",
     title: "Welcome to Tempo",
     subtitle: "This tutorial will teach you how to visually edit React code",
     customJSX: (
@@ -22,7 +22,7 @@ const tutorialData = [
     ),
   },
   {
-    gif: "https://storage.googleapis.com/tempo-public-images/styling-panel.gif",
+    gif: "https://storage.googleapis.com/tempo-public-assets/styling-panel.gif",
     title: "Edit Styles",
     subtitle: "You can edit Tailwind code just like a design tool",
     customJSX: (
@@ -38,7 +38,7 @@ const tutorialData = [
     ),
   },
   {
-    gif: "https://storage.googleapis.com/tempo-public-images/ai-prompt.gif",
+    gif: "https://storage.googleapis.com/tempo-public-assets/ai-prompt.gif",
     title: "Generate With AI",
     subtitle: "You can generate UIs using text prompts or images",
     customJSX: (
@@ -51,7 +51,7 @@ const tutorialData = [
     ),
   },
   {
-    gif: "https://storage.googleapis.com/tempo-public-images/checkout-code.gif",
+    gif: "https://storage.googleapis.com/tempo-public-assets/checkout-code.gif",
     title: "Checkout The Code",
     subtitle: "You can view and edit code anytime",
     customJSX: (
@@ -64,7 +64,7 @@ const tutorialData = [
     ),
   },
   {
-    gif: "https://storage.googleapis.com/tempo-public-images/components-marketplace.gif",
+    gif: "https://storage.googleapis.com/tempo-public-assets/components-marketplace.gif",
     title: "Reuse Components from the Marketplace",
     subtitle: "Drag and drop any component from the community",
     customJSX: (
@@ -77,7 +77,7 @@ const tutorialData = [
     ),
   },
   {
-    gif: "https://storage.googleapis.com/tempo-public-images/push-git.gif",
+    gif: "https://storage.googleapis.com/tempo-public-assets/push-git.gif",
     title: "Push to Github",
     subtitle: "Create a git repository and publish your code",
     customJSX: (
