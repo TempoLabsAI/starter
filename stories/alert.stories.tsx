@@ -2,8 +2,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 
 import { RocketIcon } from "@radix-ui/react-icons";
-import { ExclamationTriangleIcon } from "@radix-ui/react-icons"
-
+import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
 
 import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert";
 

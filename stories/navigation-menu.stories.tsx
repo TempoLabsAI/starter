@@ -144,7 +144,8 @@ export const Base: Story = {
                         Hover Card
                       </div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        For sighted users to preview content available behind a link.
+                        For sighted users to preview content available behind a
+                        link.
                       </p>
                     </a>
                   </NavigationMenuLink>
@@ -162,7 +163,8 @@ export const Base: Story = {
                         Progress
                       </div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.
+                        Displays an indicator showing the completion progress of
+                        a task, typically displayed as a progress bar.
                       </p>
                     </a>
                   </NavigationMenuLink>
@@ -198,7 +200,8 @@ export const Base: Story = {
                         Tabs
                       </div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        A set of layered sections of content—known as tab panels—that are displayed one at a time.
+                        A set of layered sections of content—known as tab
+                        panels—that are displayed one at a time.
                       </p>
                     </a>
                   </NavigationMenuLink>
@@ -216,7 +219,9 @@ export const Base: Story = {
                         Tooltip
                       </div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
+                        A popup that displays information related to an element
+                        when the element receives keyboard focus or the mouse
+                        hovers over it.
                       </p>
                     </a>
                   </NavigationMenuLink>

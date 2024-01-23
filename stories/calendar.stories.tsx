@@ -18,7 +18,6 @@ import {
   SelectValue,
 } from "../components/ui/select";
 
-
 import { Button } from "../components/ui/button";
 import { useState } from "react";
 import { DateRange } from "react-day-picker";
@@ -126,22 +125,20 @@ export const DatePickerWithPresets: Story = {
             className={"w-[240px] justify-start text-left font-normal"}
           >
             <CalendarIcon className="mr-2 h-4 w-4" />
-            {date ? (
-              format(date, "LLL dd, y")
-            ) : (
-              <span>Pick a date</span>
-            )}
+            {date ? format(date, "LLL dd, y") : <span>Pick a date</span>}
           </Button>
         </PopoverTrigger>
         <PopoverContent
           align="start"
           className="flex w-auto flex-col space-y-2 p-2"
         >
-          <Select onValueChange={(value) => {
-            const newDate = new Date();
-            newDate.setDate(newDate.getDate() + parseInt(value));
-            setDate(newDate);
-          }}>
+          <Select
+            onValueChange={(value) => {
+              const newDate = new Date();
+              newDate.setDate(newDate.getDate() + parseInt(value));
+              setDate(newDate);
+            }}
+          >
             <SelectTrigger>
               <SelectValue placeholder="Select" />
             </SelectTrigger>
@@ -153,7 +150,7 @@ export const DatePickerWithPresets: Story = {
             </SelectContent>
           </Select>
           <div className="rounded-md border">
-          <Calendar
+            <Calendar
               initialFocus
               mode="single"
               defaultMonth={date}

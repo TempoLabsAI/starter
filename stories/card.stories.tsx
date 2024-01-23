@@ -39,7 +39,9 @@ export const Base: Story = {
       <Card className="w-[350px]">
         <CardHeader>
           <CardTitle>Create project</CardTitle>
-          <CardDescription>Deploy your new project in one-click.</CardDescription>
+          <CardDescription>
+            Deploy your new project in one-click.
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <form>
@@ -70,7 +72,7 @@ export const Base: Story = {
           <Button>Deploy</Button>
         </CardFooter>
       </Card>
-    )
+    );
   },
   args: {},
 };
