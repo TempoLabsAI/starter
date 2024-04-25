@@ -14,7 +14,7 @@ Then, run the development server:
 Options:  
 Using bun: `bun run dev`  
 Using npm: `npm run dev`  
-Using yarn: `yar dev`
+Using yarn: `yarn dev`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
