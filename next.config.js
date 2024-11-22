@@ -10,6 +10,9 @@ const nextConfig = {
       },
     ],
   },
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  output: process.env.NEXT_PUBLIC_OUTPUT_MODE,
+  distDir: 'dist',
 };
 
 if (process.env.NEXT_PUBLIC_TEMPO) {
