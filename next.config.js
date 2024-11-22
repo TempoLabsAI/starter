@@ -12,6 +12,9 @@ const nextConfig = {
   },
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
   output: process.env.NEXT_PUBLIC_OUTPUT_MODE,
+  typescript: {
+    ignoreBuildErrors: process.env.NEXT_PUBLIC_IGNORE_ERRORS === "true",
+  }
 };
 
 if (process.env.NEXT_PUBLIC_TEMPO) {
