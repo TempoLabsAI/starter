@@ -10,6 +10,7 @@ const nextConfig = {
       },
     ],
   },
+  basePath: process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_BASE_PATH : '',
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
   output: process.env.NEXT_PUBLIC_OUTPUT_MODE,
   typescript: {
@@ -21,8 +22,6 @@ if (process.env.NEXT_PUBLIC_TEMPO) {
   nextConfig["experimental"] = {
     swcPlugins: [[require.resolve("tempo-devtools/swc"), {}]],
   };
-  // Remove basePath from nextConfig if in Tempo
-  delete nextConfig["basePath"];
 }
 
 module.exports = nextConfig;
