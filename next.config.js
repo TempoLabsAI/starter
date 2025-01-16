@@ -21,6 +21,8 @@ if (process.env.NEXT_PUBLIC_TEMPO) {
   nextConfig["experimental"] = {
     swcPlugins: [[require.resolve("tempo-devtools/swc"), {}]],
   };
+  // Remove basePath from nextConfig if in Tempo
+  delete nextConfig["basePath"];
 }
 
 module.exports = nextConfig;
